@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recollir un atribut a la vista</title>
+</head>
+<body>
+<!-- exemple3.html-->
+El missatge que es mostra, es recull del controlador
+a través de l'atribut "nomParam".
+</br>
+En aquest exemple ho fem amb @PathVariable i passem els valors per la URL
+estil REST
+
+<h1> Exemple tipus REST -> http://localhost:8080/exemple3/<span th:text="${nomParam}"></span> </h1>
+
+<h1 th:text="${'hola que tal tipus rest www.ex.cat/'+nomParam}"> </h1>
+
+
+</body>
+</html>
